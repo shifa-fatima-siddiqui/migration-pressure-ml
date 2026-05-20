@@ -580,7 +580,7 @@ def _highlight_score(val):
 
 styled = (
     top10.style
-    .applymap(_highlight_category, subset=["Category"])
+    .map(_highlight_category, subset=["Category"])
     .set_properties(**{
         "background-color": "#0b1219",
         "color": "#c8d6e5",
